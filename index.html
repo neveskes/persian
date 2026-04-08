@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Persian | Personalized Items</title>
+    <style>
+      :root {
+        color-scheme: light;
+      }
+
+      body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        background: linear-gradient(135deg, #f7f4ff, #f6fbff);
+        color: #1f1f1f;
+      }
+
+      main {
+        max-width: 900px;
+        margin: 48px auto;
+        padding: 0 20px;
+      }
+
+      h1 {
+        text-align: center;
+        margin-bottom: 32px;
+        font-size: clamp(1.8rem, 2.6vw, 2.8rem);
+      }
+
+      .options {
+        display: grid;
+        gap: 14px;
+      }
+
+      .option-link {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        text-decoration: none;
+        background: #ffffff;
+        border: 1px solid #d9ddff;
+        border-radius: 14px;
+        padding: 16px 18px;
+        font-size: 1.05rem;
+        color: #1f1f1f;
+        transition: transform 0.15s ease, box-shadow 0.15s ease;
+      }
+
+      .option-link:hover,
+      .option-link:focus-visible {
+        transform: translateY(-2px);
+        box-shadow: 0 10px 20px rgba(65, 93, 255, 0.14);
+      }
+
+      .icon {
+        font-size: 1.4rem;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <h1>What are you looking for?</h1>
+
+      <section class="options" aria-label="Personalization categories">
+        <a class="option-link" href="school/">
+          <span class="icon" aria-hidden="true">🎒</span>
+          <span>Personalized for school</span>
+        </a>
+
+        <a class="option-link" href="company/">
+          <span class="icon" aria-hidden="true">🏢</span>
+          <span>Personalized for company</span>
+        </a>
+
+        <a class="option-link" href="group/">
+          <span class="icon" aria-hidden="true">👥</span>
+          <span>Personalized for group</span>
+        </a>
+
+        <a class="option-link" href="ecommerce/">
+          <span class="icon" aria-hidden="true">🛒</span>
+          <span>Personalized for E-commerce</span>
+        </a>
+
+        <a class="option-link" href="individual/">
+          <span class="icon" aria-hidden="true">✨</span>
+          <span>Personalized individual</span>
+        </a>
+      </section>
+    </main>
+  </body>
+</html>
